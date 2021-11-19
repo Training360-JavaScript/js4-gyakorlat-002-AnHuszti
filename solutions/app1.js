@@ -6,7 +6,7 @@ const getServerData = () => serverData;
  * Javítsd a hibás paraméteket a fetch függvény meghívásánál!
  * CSAK A 22. SORBAN DOLGOZZ!
  * 
- * PÉLDÁK: https://developer.mozilla.org/en-US/docs/Web/API/fetch#examples
+ * PÉLDÁK: https://developer.mozilla.org/en-US/docs/Web/API/fet ch#examples
  * 
  * LEÍRÁS: A függvény a kapott paraméterek alapján indít egy fetch kérést.
  * Miután a válasz megérkezett, az első függvényben, amelyet az első .then-ben 
@@ -19,7 +19,7 @@ const getServerData = () => serverData;
  * @param {string} url a távoli erőforrás címe, ahonnan lekérjük az adatokat
  */
 const startFetch = (method = 'GET', url = '') => {
-    fetch('', {  })
+    fetch(url, {method})
         .then(response => response.json())
         .then(data => serverData = data)
         .catch(
@@ -32,6 +32,6 @@ const startFetch = (method = 'GET', url = '') => {
  * CSAK A 35. SORBAN DOLGOZZ!
  */
 export {
-    
+    startFetch,
     getServerData,
 }
