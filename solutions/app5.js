@@ -17,7 +17,6 @@ const sortProducts = (products = [{ name: '' }]) => {
       if ( a.name > b.name ){
         return 1;
       }
-      //return 0;
     })
 };
 
